@@ -40,9 +40,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm px-10">
+    <div className="navbar bg-base-100 shadow-sm px-0 md:px-10">
       <div className="flex-1">
-        <a className="text-xl font-bold px-3 py-2 rounded-lg transition-all duration-300 hover:bg-[#244D3F]/10 hover:text-[#244D3F]">
+        <a className="text-xl font-bold px-2 py-2 rounded-lg transition-all duration-300 hover:bg-[#244D3F]/10 hover:text-[#244D3F]">
           Keen<span className="text-[#244D3F]">Keeper</span>
         </a>
       </div>
