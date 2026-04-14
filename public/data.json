@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Rahim Uddin",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "rahim.uddin@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "Studied Computer Science together at Dhaka University. Regularly discussed coding and startups.",
+    "goal": 14,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["colleague", "marketing"],
+    "bio": "Worked together in a digital marketing agency. Great at social media campaigns.",
+    "goal": 14,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/33.jpg",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["gym", "fitness"],
+    "bio": "Met at local gym. Shares workout plans and fitness tips regularly.",
+    "goal": 10,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 4,
+    "name": "Farzana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["client", "freelance"],
+    "bio": "Client from Upwork. Hired for a website redesign project.",
+    "goal": 15,
+    "next_due_date": "2025-07-08"
+  },
+  {
+    "id": 5,
+    "name": "Imran Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/56.jpg",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["business", "startup"],
+    "bio": "Co-founder discussion partner for an e-commerce startup idea.",
+    "goal": 14,
+    "next_due_date": "2025-07-14"
+  },
+  {
+    "id": 6,
+    "name": "Sharmin Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/67.jpg",
+    "email": "sharmin.sultana@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["neighbor", "family friend"],
+    "bio": "Neighbor since childhood. Families are closely connected.",
+    "goal": 10,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 7,
+    "name": "Sajid Khan",
+    "picture": "https://randomuser.me/api/portraits/men/78.jpg",
+    "email": "sajid.khan@gmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["mentor", "career"],
+    "bio": "Senior mentor who guided me in learning web development and freelancing.",
+    "goal": 20,
+    "next_due_date": "2025-07-05"
+  },
+  {
+    "id": 8,
+    "name": "Mim Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/89.jpg",
+    "email": "mim.rahman@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["school", "friend"],
+    "bio": "School friend from Dinajpur. Still keeps in touch occasionally.",
+    "goal": 12,
+    "next_due_date": "2025-07-16"
+  },
+  {
+    "id": 9,
+    "name": "Arif Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/men/91.jpg",
+    "email": "arif.chowdhury@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["developer", "React"],
+    "bio": "Met in Programming Hero community. Discuss React and Next.js projects.",
+    "goal": 7,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 10,
+    "name": "Tania Islam",
+    "picture": "https://randomuser.me/api/portraits/women/52.jpg",
+    "email": "tania.islam@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["relative", "family"],
+    "bio": "Cousin living in Rajshahi. Used to talk regularly during holidays.",
+    "goal": 14,
+    "next_due_date": "2025-07-09"
+  }
+]

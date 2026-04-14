@@ -5,19 +5,17 @@ import { GrTwitter } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#244D3F] text-white overflow-hidden">
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute -top-20 -left-20 w-72 h-72 bg-green-300 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-72 h-72 bg-emerald-400 rounded-full blur-3xl"></div>
-      </div>
-
-      <div className="relative max-w-7xl mx-auto px-6 py-14">
+    <footer className="bg-[#244D3F] text-white">
+      {/* Fixed width container */}
+      <div className="max-w-5xl mx-auto px-6 py-14">
+        
+        {/* Top Section */}
         <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-bold">
             KeenKeeper
           </h1>
 
-          <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-200 leading-relaxed">
+          <p className="text-sm md:text-base text-gray-200 max-w-2xl mx-auto">
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
           </p>
@@ -25,33 +23,26 @@ const Footer = () => {
 
         {/* Social */}
         <div className="mt-10 text-center space-y-3">
-          <p className="text-lg font-semibold">Follow Us</p>
+          <p className="font-semibold">Social Links</p>
 
-          <div className="flex items-center justify-center gap-5">
-            {[
-              { icon: <FaFacebook />, color: "hover:text-blue-400" },
-              { icon: <GrTwitter />, color: "hover:text-sky-400" },
-              { icon: <FiInstagram />, color: "hover:text-pink-400" },
-            ].map((item, i) => (
-              <span
-                key={i}
-                className={`text-2xl cursor-pointer transition-transform duration-300 hover:scale-125 ${item.color}`}
-              >
-                {item.icon}
-              </span>
-            ))}
+          <div className="flex items-center justify-center gap-5 text-xl">
+            <FaFacebook className="hover:text-blue-400 transition" />
+            <GrTwitter className="hover:text-sky-400 transition" />
+            <FiInstagram className="hover:text-pink-400 transition" />
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/20 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-200">
+        {/* Bottom */}
+        <div className="mt-10 border-t border-white/20 pt-5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-200">
           <p>© 2026 KeenKeeper. All rights reserved.</p>
 
-          <div className="flex flex-wrap justify-center gap-5">
+          <div className="flex gap-5 flex-wrap justify-center">
             <p className="hover:text-white cursor-pointer">Privacy Policy</p>
-            <p className="hover:text-white cursor-pointer">Terms of Service</p>
+            <p className="hover:text-white cursor-pointer">Terms</p>
             <p className="hover:text-white cursor-pointer">Cookies</p>
           </div>
         </div>
+
       </div>
     </footer>
   );
