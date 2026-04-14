@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const FriendCard = ({ friend }) => {
-  const {id, picture, name, days_since_contact, tags, status } = friend;
+  const { id, picture, name, days_since_contact, tags, status } = friend;
 
   const statusColor = {
     overdue: "bg-red-500",
