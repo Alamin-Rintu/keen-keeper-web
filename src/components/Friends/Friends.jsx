@@ -1,9 +1,14 @@
 import FriendCard from "./FriendCard/FriendCard";
+import Link from "next/link";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 const appsPromise = async function () {
-  const res = await fetch("http://localhost:3000/data.json");
-  const friends = await res.json();
-  return friends;
+    const filePath = path.join(process.cwd(), "public", "data.json");
+  const getfriendsData = JSON.parse(await readFile(filePath, "utf-8"));
+//   const res = await fetch("http://localhost:3000/data.json");
+//   const friends = await res.json();
+  return getfriendsData;
 };
 
 const Friends = async() => {

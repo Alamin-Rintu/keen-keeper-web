@@ -1,23 +1,23 @@
+import QuickCheckIn from "@/components/Friends/FriendCard/QuickCheckIn";
 import Image from "next/image";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { FaArchive, FaBell } from "react-icons/fa";
-import {
-  MdOutlineTextsms,
-  MdOutlineVideocam,
-  MdWifiCalling1,
-} from "react-icons/md";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const appsPromise = async function () {
-  const res = await fetch("http://localhost:3000/data.json");
-  const friends = await res.json();
-  return friends;
+  const filePath = path.join(process.cwd(), "public", "data.json");
+  const getfriendsData = JSON.parse(await readFile(filePath, "utf-8"));
+  // const res = await fetch("http://localhost:3000/data.json");
+  // const friends = await res.json();
+  return getfriendsData;
 };
 
 const FriendsDetails = async ({ params }) => {
   const { id } = await params;
   const friends = await appsPromise();
   const friend = friends.find((friend) => String(friend.id) === id);
-  // console.log(friend);
+
   const {
     picture,
     name,
@@ -135,10 +135,10 @@ const FriendsDetails = async ({ params }) => {
             </p>
           </div>
 
-          <div className="bg-white p-4 shadow rounded-xl">
+          {/* <div className="bg-white p-4 shadow rounded-xl">
             <p className="text-[#244D3F] font-semibold mb-3">Quick Check-In</p>
 
-            <div className="flex flex-wrap justify-between gap-3 text-center mt-3">
+            <div onClick={() => handleCallClick()} className="flex flex-wrap justify-between gap-3 text-center mt-3">
               <div className="flex-1  bg-gray-400 p-3 rounded-lg">
                 <MdWifiCalling1 className="mx-auto text-lg" />
                 <p className="text-sm font-semibold">Call</p>
@@ -154,7 +154,8 @@ const FriendsDetails = async ({ params }) => {
                 <p className="text-sm font-semibold">Video</p>
               </div>
             </div>
-          </div>
+          </div> */}
+          <QuickCheckIn friend={friend} />
         </div>
       </div>
     </div>
