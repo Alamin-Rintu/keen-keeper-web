@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Project Name: Keen Keeper Web
 
-## Getting Started
+Short Description: Keen Keeper Web is a simple and clean web application that helps you manage and maintain your relationships. You can track when you last contacted your friends, set goals, and log interactions like calls, texts, and video chats — all in one place.
 
-First, run the development server:
+Technologies :
+   Next.js
+  Tailwind CSS
+  DaisyUI
+  React Icons
+  date-and-time
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3 key features are: 
+ A) Friend Management:
+   Display friends from a JSON file in a responsive card layout
+   Each friend shows picture, name, tags, and contact status
+   Click any friend to view detailed information
+   
+B) Interaction Tracking (Timeline): 
+   Log interactions like Call, Text, and Video
+   Automatically adds entries with date and activity title
+   Filter timeline by interaction type (Call/Text/Video)
+   
+C) Smart Dashboard & Stats: 
+   View relationship stats like days since contact, goals, and next due date
+   Summary cards on homepage for quick overview
+   Clean and user-friendly UI based on Figma design

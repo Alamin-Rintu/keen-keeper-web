@@ -7,16 +7,13 @@ const NotFoundPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-[#f6f8f7] to-[#eef3f1] px-4">
 
-      {/* Soft floating glow */}
       <div className="absolute w-[400px] h-[400px] bg-[#244D3F]/10 blur-[120px] rounded-full top-[-80px] left-[-80px]" />
       <div className="absolute w-[350px] h-[350px] bg-emerald-200/20 blur-[140px] rounded-full bottom-[-80px] right-[-80px]" />
 
-      {/* Card */}
       <div className="relative z-10 text-center max-w-lg w-full bg-white/80 backdrop-blur-xl 
         border border-gray-100 shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
         rounded-[2.5rem] p-10">
 
-        {/* Image */}
         <div className="flex justify-center">
           <Image
             src={notFoundImg}
@@ -27,18 +24,15 @@ const NotFoundPage = () => {
           />
         </div>
 
-        {/* Title */}
         <h1 className="text-4xl font-extrabold text-gray-800 mt-6 tracking-tight">
           404 — Page Not Found
         </h1>
 
-        {/* Subtitle */}
         <p className="text-gray-500 mt-3 text-sm leading-relaxed">
           The page you’re looking for doesn’t exist or may have been moved.
           Please check the URL or go back to home.
         </p>
 
-        {/* Button */}
         <div className="mt-8">
           <Link
             href="/"
@@ -53,7 +47,6 @@ const NotFoundPage = () => {
           </Link>
         </div>
 
-        {/* Footer */}
         <p className="text-xs text-gray-400 mt-6 tracking-widest">
           ERROR 404 • SYSTEM MESSAGE
         </p>

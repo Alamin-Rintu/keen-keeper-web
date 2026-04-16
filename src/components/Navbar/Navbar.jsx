@@ -12,7 +12,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navLinkStyle = (path) =>
-    `flex items-center gap-1 px-3 py-2 rounded-lg font-semibold ${
+    `flex items-center gap-2 px-3 py-2 rounded-lg font-semibold ${
       pathName === path ? "bg-[#244D3F] text-white" : "hover:bg-[#244D3F]/10"
     }`;
 
@@ -41,7 +41,6 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm px-4 md:px-10 relative">
       
-      {/* Logo */}
       <div className="flex-1">
         <Link
           href="/"
@@ -51,19 +50,16 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Desktop Menu */}
       <div className="hidden md:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
 
-      {/* Mobile Hamburger */}
       <div className="md:hidden">
         <button onClick={() => setOpen(!open)}>
           {open ? <HiX size={28} /> : <HiMenu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden z-50">
           <ul className="menu flex flex-col p-4 space-y-2">
